@@ -1,0 +1,28 @@
+
+:root {
+    --background-color-main: #D8DFE8;
+    --background-color-encrypted-text-decrypted: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color-main);
+    height: 100vh;
+}
+
+.container__header__logo {
+    margin: 3% 6%;
+}
+
+.container_encrypted_text_decrypted {
+    display: flex;
+    justify-content: flex-end;
+    width: 400px;
+    height: 944px;
+    background-color: var(--background-color-encrypted-text-decrypted);
+}
