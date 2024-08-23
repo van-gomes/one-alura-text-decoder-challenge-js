@@ -1,7 +1,9 @@
 
 :root {
     --background-color-main: #D8DFE8;
-    --background-color-encrypted-text-decrypted: #fff;
+    --background-color-text-decoder: hsl(0, 0%, 100%);
+    --gray-400: #8d8d99;
+    --gray-500: #9E9E9E;
 }
 
 * {
@@ -19,10 +21,41 @@ body {
     margin: 3% 6%;
 }
 
-.container_encrypted_text_decrypted {
+.container_main {
     display: flex;
     justify-content: flex-end;
-    width: 400px;
-    height: 944px;
-    background-color: var(--background-color-encrypted-text-decrypted);
+    align-items: center;
+}
+
+.container__text__decoder {
+    max-width: 20%;
+    margin-top: -90px !important;
+    margin: 3%;
+    background-color: var(--background-color-text-decoder);
+}
+
+.img__text__decoder {
+    width: 100%;
+    height: auto;
+    padding: 10% 15%;
+}
+
+.content__text__decoder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title__text_decoder {
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--gray-400);
+}
+
+.paragraph__text__decoder {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--gray-500);
 }
