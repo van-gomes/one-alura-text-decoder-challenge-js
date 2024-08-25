@@ -4,7 +4,8 @@
     --background-color-text-decoder: hsl(0, 0%, 100%);
     --gray-400: #8d8d99;
     --gray-500: #9E9E9E;
-    --dark-blue-300-h2: #0A3871;
+    --dark-blue-300: #0A3871;
+    --decrypt-button: #D8DFE8;
 
     --container-decoder-top: -100px;
 }
@@ -30,13 +31,66 @@ body {
 }
 
 .container_text {
-    display: flex;
-    justify-content: flex-start;
+    margin-left: 17%;
 }
 
-.container_text h2 {
-    font-size: 1.5rem;
-    color: var(--dark-blue-300-h2);
+.container__text__textarea {
+    width: 680px;
+    height: 48px;
+    padding: 2.5px;
+    border: none;
+    background: transparent;
+}
+
+.container__text__textarea::placeholder {
+    font-size: 2rem;
+    color: var(--dark-blue-300);
+}
+
+.container__text__textarea:hover {
+    color: var(--dark-blue-300);
+    border: 0.3px solid;
+}
+
+.content__info__type__text {
+    display: flex;
+    align-items: center;
+    margin-top: 534px;
+    margin-bottom: 8px;
+}
+
+.paragraph__info__type__text {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+}
+
+.encrypt__button, .decrypt__button {
+    width: 328px;
+    font-size: 1rem;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+}
+
+.encrypt__button {
+    margin-right: 8px;
+    color: var(--background-color-main);
+    background-color: var(--dark-blue-300);
+}
+
+.decrypt__button {
+    color: var(--dark-blue-300);
+    background-color: var(--decrypt-button);
+}
+
+.encrypt__button:hover {
+    background-color: var(--background-color-main);
+    color: var(--dark-blue-300);
+}
+
+.decrypt__button:hover {
+    background-color: var(--dark-blue-300);
+    color: var(--background-color-main);
 }
 
 .container__decoder {

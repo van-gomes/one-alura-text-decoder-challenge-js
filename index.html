@@ -14,8 +14,25 @@
     </header>
     <main class="container_main">
         <section class="container_text">
-            <h2>Digite seu texto</h2>
+            <textarea class="container__text__textarea"
+                      id="textarea"
+                      placeholder="Digite seu texto"></textarea>
+            
+            <div class="content__info__type__text">
+                 <img class="img__info__type__text" 
+                        src="./assets/bi_exclamation-circle-fill.png"
+                        alt="Aviso do tipo de texto a ser inserido" >
+                 <p class="paragraph__info__type__text">
+                    Apenas letras minúsculas e sem acento.
+                 </p>
+            </div>
+
+            <div class="btn">
+                <button id="codificador" class="encrypt__button">Criptografar</button>
+                <button id="decodificador" class="decrypt__button">Descriptografar</button>
+            </div>
         </section>
+
         <section class="container__decoder">
              <div class="content__text__decoder">
                 <img class="img__decoder" src="./assets/text-decoder.png">
