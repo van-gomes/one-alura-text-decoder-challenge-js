@@ -14,9 +14,9 @@
     </header>
     <main class="container_main">
         <section class="container_text">
-            <textarea class="container__text__textarea"
-                      id="textarea"
-                      placeholder="Digite seu texto"></textarea>
+            <input id="inputtext1" type="text"
+                   class="container__text__input"
+                   placeholder="Digite seu texto">
             
             <div class="content__info__type__text">
                  <img class="img__info__type__text" 
@@ -28,22 +28,40 @@
             </div>
 
             <div class="btn">
-                <button id="codificador" class="encrypt__button">Criptografar</button>
-                <button id="decodificador" class="decrypt__button">Descriptografar</button>
+                <button id="codificador" 
+                        class="encrypt__button"
+                        onclick="criptografar()"
+                        >
+                        Criptografar
+                </button>
+                <button id="descriptografar" 
+                        class="decrypt__button"
+                        onclick="descriptografar()"
+                        >
+                        Descriptografar
+                </button>
             </div>
         </section>
 
         <section class="container__decoder">
-             <div class="content__text__decoder">
-                <img class="img__decoder" src="./assets/text-decoder.png">
-                <h1 class="title__text_decoder">
-                    Nenhuma mensagem encontrada
-                </h1>
-                <p class="paragraph__text__decoder">
-                    Digite um texto que você deseja criptografar ou descriptografar.
-                </p>
-            </div>
-        </section>
+            <div class="content__text__decoder">
+               <img class="img__decoder" src="./assets/text-decoder.png">
+               <h1 class="title__text_decoder">
+                   Nenhuma mensagem encontrada
+               </h1>
+               <input id="inputtext2" class="input__text__decoder"
+                   placeholder="Digite um texto que você deseja criptografar ou descriptografar."
+               >
+               <button id="inputcopytext" 
+                   class="copy__button"
+                   onclick="copyText()"
+                   >
+                   Copiar
+               </button>
+           </div>
+       </section>
     </main>
+
+    <script src="app.js" defer></script>
 </body>
 </html>
