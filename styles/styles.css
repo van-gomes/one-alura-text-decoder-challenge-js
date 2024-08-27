@@ -95,8 +95,7 @@ body {
 
 .container__decoder {
     display: flex;
-    justify-content: flex-end;
-    width: 23.3%;
+    width: 400px;
     height: 100vh;
     margin-top: var(--container-decoder-top);
     margin-right: 3%;
@@ -109,26 +108,34 @@ body {
 .content__text__decoder {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    width: 400px;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
 }
 
 .img__decoder {
     width: 100%;
     height: auto;
-    padding: 10% 15%;
+    padding-top: 233px;
+    padding-bottom: 20px;
 }
 
 .title__text_decoder {
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
-    color: var(--gray-400);
-    box-shadow: var(--gray-500);
+    color: var(--gray-500);
 }
 
 .input__text__decoder {
+    width: 336px;
     height: 72px;
-    background-color: var(--background-color-main);
+    padding: 20px;
+    border: none;
+    background-color: var(--background-color-text-decoder);
 }
 
 .input__text__decoder::placeholder {
@@ -140,7 +147,7 @@ body {
 .copy__button {
     width: 336px;
     padding: 24px;
-    margin-top: 500px;
+    margin-top: 186px;
     margin-bottom: 8px;
     border-radius: 24px;
     border: 1px solid #0A3871;
