@@ -1,21 +1,3 @@
-
-:root {
-    --background-color-main: #D8DFE8;
-    --background-color-text-decoder: hsl(0, 0%, 100%);
-    --gray-400: #8d8d99;
-    --gray-500: #9E9E9E;
-    --dark-blue-300: #0A3871;
-    --decrypt-button: #D8DFE8;
-
-    --container-decoder-top: -100px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: var(--background-color-main);
 }
