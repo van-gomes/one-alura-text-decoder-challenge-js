@@ -1,23 +1,31 @@
+/* Reseta as configurações básicas */
 body {
     background-color: var(--background-color-main);
 }
 
+/* Logo da Alura */
 .img__logo {
     margin: 3% 6%;
+    width: 100%;
+    max-width: 45px;
 }
 
+/* Container principal que contém os dois blocos principais (container_text e container__decoder) */
 .container_main {
     display: flex;
-    justify-content: space-between;
-    margin: 3%;
+    justify-content: center;
 }
 
+/* Container do input de texto e seus botões */
 .container_text {
-    margin-left: 17%;
+    margin-left: 8%;
+    flex-basis: 38%;
 }
 
+/* Input de texto */
 .container__text__input {
-    width: 680px;
+    width: 100%;
+    max-width: 680px;
     height: 48px;
     padding: 2.5px;
     border: none;
@@ -34,11 +42,11 @@ body {
     border: 0.3px solid;
 }
 
+/* Container para as informações do tipo de texto */
 .content__info__type__text {
     display: flex;
     align-items: center;
-    margin-top: 534px;
-    margin-bottom: 8px;
+    margin-top: 520px;
 }
 
 .paragraph__info__type__text {
@@ -46,12 +54,16 @@ body {
     color: var(--gray-400);
 }
 
+/* Estilos dos botões de criptografar e descriptografar */
 .encrypt__button, .decrypt__button {
-    width: 328px;
+    width: 100%;
+    max-width: 328px;
     font-size: 1rem;
     padding: 24px;
+    margin-top: 45px;
     border-radius: 24px;
     border: 1px solid #0A3871;
+    cursor: pointer;
 }
 
 .encrypt__button {
@@ -75,24 +87,28 @@ body {
     color: var(--background-color-main);
 }
 
+/* Container do decodificador de texto */
 .container__decoder {
     display: flex;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 100vh;
     margin-top: var(--container-decoder-top);
-    margin-right: 3%;
+    margin-left: 10%;
     margin-bottom: 6%;
     border-radius: 10px;
     background-color: var(--background-color-text-decoder);
     border: #A18E8E solid 1px;
 }
 
+/* Conteúdo do decodificador */
 .content__text__decoder {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 100%;
     text-align: center;
     padding: 20px;
@@ -101,8 +117,8 @@ body {
 .img__decoder {
     width: 100%;
     height: auto;
-    padding-top: 233px;
-    padding-bottom: 20px;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
 }
 
 .title__text_decoder {
@@ -113,7 +129,8 @@ body {
 }
 
 .input__text__decoder {
-    width: 336px;
+    width: 100%;
+    max-width: 336px;
     height: 72px;
     padding: 20px;
     border: none;
@@ -126,12 +143,15 @@ body {
     color: var(--gray-500);
 }
 
+/* Botão de copiar texto */
 .copy__button {
-    width: 336px;
+    width: 100%;
+    max-width: 336px;
     padding: 24px;
     margin-top: 186px;
     margin-bottom: 8px;
     border-radius: 24px;
     border: 1px solid #0A3871;
     background-color: var(--background-color-text-decoder);
+    cursor: pointer;
 }
