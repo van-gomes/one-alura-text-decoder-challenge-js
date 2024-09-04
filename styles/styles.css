@@ -15,8 +15,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    margin-left: 15rem; /* Adiciona o espaçamento à esquerda em rem */
-    width: calc(100% - 15rem); /* Garante que o container ainda ocupe o espaço restante */
 }
 
 /* Input de texto */
