@@ -3,18 +3,33 @@ body {
     background-color: var(--background-color-main);
 }
 
-.img__logo {
-    margin: 3% 6%;
-    width: 100%;
-    max-width: 45px;
+.container_header {
+    display: flex;
+    display: flex;
+    margin: 3rem 5rem;
+    padding: 1rem;
 }
 
-/* Container principal com espaçamento de 15rem (equivalente a 240px) à esquerda */
+.img__logo {
+    width: 100%;
+    max-width: 2.8125rem; /* Equivalente a 45px */
+}
+
+/* Container principal com grid layout para alinhar as seções */
+.container_main {
+    display: grid;
+    grid-template-columns: 1fr 25rem; /* Alinha a área de texto à esquerda e o decodificador à direita */
+    gap: 2rem; /* Espaçamento entre os elementos */
+    padding-left: 15rem; /* Espaçamento de 240px à esquerda */
+    width: calc(100% - 15rem); /* Garante que o layout ocupe todo o espaço disponível */
+}
+
+/* Container da área de texto */
 .container_text {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 }
 
 /* Input de texto */
@@ -37,23 +52,16 @@ body {
     border: 0.3px solid;
 }
 
+/* Informações sobre o tipo de texto */
 .content__info__type__text {
-    margin-top: 2rem;
-}
-
-/* Botões */
-.btn {
-    margin-top: 2rem;
-}
-
-/* Alinhamento flex */
-.content__info__type__text, .btn {
+    margin-top: 3rem;
     display: flex;
     align-items: center;
 }
 
 .content__info__type__text img {
     height: 1rem;
+    margin-right: 0.5rem;
 }
 
 .paragraph__info__type__text {
@@ -61,14 +69,21 @@ body {
     color: var(--gray-400);
 }
 
+/* Botões */
+.btn {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem; /* Espaçamento entre os botões */
+}
+
 /* Estilos dos botões de criptografar e descriptografar */
 .encrypt__button, .decrypt__button {
     width: 100%;
-    max-width: 328px;
+    max-width: 20.5rem; /* Equivalente a 328px */
     font-size: 1rem;
-    padding: 24px;
-    border-radius: 24px;
-    border: 1px solid #0A3871;
+    padding: 1.5rem; /* Equivalente a 24px */
+    border-radius: 1.5rem; /* Equivalente a 24px */
+    border: 0.0625rem solid #0A3871; /* Equivalente a 1px */
     cursor: pointer;
 }
 
@@ -92,18 +107,16 @@ body {
     color: var(--background-color-main);
 }
 
-/* Container do decodificador de texto */
+/* Container do decodificador de texto, agora alinhado à direita */
 .container__decoder {
     display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
     width: 100%;
-    max-width: 400px;
-    height: 100vh;
-    margin-top: var(--container-decoder-top);
-    margin-left: 10%;
-    margin-bottom: 6%;
-    border-radius: 10px;
+    max-width: 25rem; /* Equivalente a 400px */
+    border-radius: 0.625rem; /* Equivalente a 10px */
     background-color: var(--background-color-text-decoder);
-    border: #A18E8E solid 1px;
+    border: 0.0625rem solid #A18E8E; /* Equivalente a 1px */
 }
 
 /* Conteúdo do decodificador */
@@ -113,12 +126,12 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 400px;
-    height: 100%;
+    max-width: 25rem; /* Equivalente a 400px */
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem; /* Equivalente a 20px */
 }
 
+/* Imagem no decodificador */
 .img__decoder {
     width: 100%;
     height: auto;
@@ -135,9 +148,9 @@ body {
 
 .input__text__decoder {
     width: 100%;
-    max-width: 336px;
-    height: 72px;
-    padding: 20px;
+    max-width: 21rem; /* Equivalente a 336px */
+    height: 4.5rem; /* Equivalente a 72px */
+    padding: 1.25rem; /* Equivalente a 20px */
     border: none;
     background-color: var(--background-color-text-decoder);
 }
@@ -151,12 +164,12 @@ body {
 /* Botão de copiar texto */
 .copy__button {
     width: 100%;
-    max-width: 336px;
-    padding: 24px;
-    margin-top: 186px;
-    margin-bottom: 8px;
-    border-radius: 24px;
-    border: 1px solid #0A3871;
+    max-width: 21rem; /* Equivalente a 336px */
+    padding: 1.5rem; /* Equivalente a 24px */
+    margin-top: 2rem; /* Mantém espaçamento acima */
+    margin-bottom: 0.5rem; /* Equivalente a 8px */
+    border-radius: 1.5rem; /* Equivalente a 24px */
+    border: 0.0625rem solid #0A3871; /* Equivalente a 1px */
     background-color: var(--background-color-text-decoder);
     cursor: pointer;
 }
