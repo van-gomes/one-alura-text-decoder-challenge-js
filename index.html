@@ -18,30 +18,33 @@
         <section class="container_text">
             <input id="inputtext1" type="text"
                    class="container__text__input"
-                   placeholder="Digite seu texto">
+                   placeholder="Digite seu texto"
+            >
             
-            <div class="content__info__type__text">
-                 <img class="img__info__type__text" 
-                        src="./assets/bi_exclamation-circle-fill.png"
-                        alt="Aviso do tipo de texto a ser inserido" >
-                 <p class="paragraph__info__type__text">
-                    Apenas letras minúsculas e sem acento.
-                 </p>
-            </div>
+            <div class="container__info__type__text">
+                <div class="content__info__type__text">
+                    <img class="img__info__type__text" 
+                            src="./assets/bi_exclamation-circle-fill.png"
+                            alt="Aviso do tipo de texto a ser inserido" >
+                    <p class="paragraph__info__type__text">
+                        Apenas letras minúsculas e sem acento.
+                    </p>
 
-            <div class="btn">
-                <button id="codificador" 
-                        class="encrypt__button"
-                        onclick="criptografar()"
-                        >
-                        Criptografar
-                </button>
-                <button id="descriptografar" 
-                        class="decrypt__button"
-                        onclick="descriptografar()"
-                        >
-                        Descriptografar
-                </button>
+                    <div class="btn">
+                        <button id="codificador" 
+                                class="encrypt__button"
+                                onclick="criptografar()"
+                                >
+                                Criptografar
+                        </button>
+                        <button id="descriptografar" 
+                                class="decrypt__button"
+                                onclick="descriptografar()"
+                                >
+                                Descriptografar
+                        </button>
+                    </div>
+               </div>
             </div>
         </section>
 

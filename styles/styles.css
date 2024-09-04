@@ -10,30 +10,28 @@ body {
     max-width: 45px;
 }
 
-/* Container principal que contém os dois blocos principais (container_text e container__decoder) */
-.container_main {
-    display: flex;
-    justify-content: center;
-}
-
-/* Container do input de texto e seus botões */
+/* Container principal com espaçamento de 15rem (equivalente a 240px) à esquerda */
 .container_text {
-    margin-left: 8%;
-    flex-basis: 38%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15rem; /* Adiciona o espaçamento à esquerda em rem */
+    width: calc(100% - 15rem); /* Garante que o container ainda ocupe o espaço restante */
 }
 
 /* Input de texto */
 .container__text__input {
     width: 100%;
-    max-width: 680px;
-    height: 48px;
-    padding: 2.5px;
+    max-width: 42.5rem; /* Equivalente a 680px */
+    height: 3rem; /* Equivalente a 48px */
+    padding: 1.5rem;
     border: none;
     background: transparent;
 }
 
 .container__text__input::placeholder {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--dark-blue-300);
 }
 
@@ -42,11 +40,23 @@ body {
     border: 0.3px solid;
 }
 
-/* Container para as informações do tipo de texto */
 .content__info__type__text {
+    margin-top: 2rem;
+}
+
+/* Botões */
+.btn {
+    margin-top: 2rem;
+}
+
+/* Alinhamento flex */
+.content__info__type__text, .btn {
     display: flex;
     align-items: center;
-    margin-top: 520px;
+}
+
+.content__info__type__text img {
+    height: 1rem;
 }
 
 .paragraph__info__type__text {
@@ -60,14 +70,12 @@ body {
     max-width: 328px;
     font-size: 1rem;
     padding: 24px;
-    margin-top: 45px;
     border-radius: 24px;
     border: 1px solid #0A3871;
     cursor: pointer;
 }
 
 .encrypt__button {
-    margin-right: 8px;
     color: var(--background-color-main);
     background-color: var(--dark-blue-300);
 }
