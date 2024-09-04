@@ -1,0 +1,162 @@
+/* Reseta as configurações básicas */
+body {
+    background-color: var(--background-color-main);
+}
+
+.img__logo {
+    margin: 3% 6%;
+    width: 100%;
+    max-width: 45px;
+}
+
+/* Container principal com espaçamento de 15rem (equivalente a 240px) à esquerda */
+.container_text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Input de texto */
+.container__text__input {
+    width: 100%;
+    max-width: 42.5rem; /* Equivalente a 680px */
+    height: 3rem; /* Equivalente a 48px */
+    padding: 1.5rem;
+    border: none;
+    background: transparent;
+}
+
+.container__text__input::placeholder {
+    font-size: 1.5rem;
+    color: var(--dark-blue-300);
+}
+
+.container__text__input:hover {
+    color: var(--dark-blue-300);
+    border: 0.3px solid;
+}
+
+.content__info__type__text {
+    margin-top: 2rem;
+}
+
+/* Botões */
+.btn {
+    margin-top: 2rem;
+}
+
+/* Alinhamento flex */
+.content__info__type__text, .btn {
+    display: flex;
+    align-items: center;
+}
+
+.content__info__type__text img {
+    height: 1rem;
+}
+
+.paragraph__info__type__text {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+}
+
+/* Estilos dos botões de criptografar e descriptografar */
+.encrypt__button, .decrypt__button {
+    width: 100%;
+    max-width: 328px;
+    font-size: 1rem;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.encrypt__button {
+    color: var(--background-color-main);
+    background-color: var(--dark-blue-300);
+}
+
+.decrypt__button {
+    color: var(--dark-blue-300);
+    background-color: var(--decrypt-button);
+}
+
+.encrypt__button:hover {
+    background-color: var(--background-color-main);
+    color: var(--dark-blue-300);
+}
+
+.decrypt__button:hover {
+    background-color: var(--dark-blue-300);
+    color: var(--background-color-main);
+}
+
+/* Container do decodificador de texto */
+.container__decoder {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    margin-top: var(--container-decoder-top);
+    margin-left: 10%;
+    margin-bottom: 6%;
+    border-radius: 10px;
+    background-color: var(--background-color-text-decoder);
+    border: #A18E8E solid 1px;
+}
+
+/* Conteúdo do decodificador */
+.content__text__decoder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.img__decoder {
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+.title__text_decoder {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--gray-500);
+}
+
+.input__text__decoder {
+    width: 100%;
+    max-width: 336px;
+    height: 72px;
+    padding: 20px;
+    border: none;
+    background-color: var(--background-color-text-decoder);
+}
+
+.input__text__decoder::placeholder {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--gray-500);
+}
+
+/* Botão de copiar texto */
+.copy__button {
+    width: 100%;
+    max-width: 336px;
+    padding: 24px;
+    margin-top: 186px;
+    margin-bottom: 8px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    background-color: var(--background-color-text-decoder);
+    cursor: pointer;
+}
