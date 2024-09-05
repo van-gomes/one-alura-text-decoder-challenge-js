@@ -3,16 +3,22 @@ body {
     background-color: var(--background-color-main);
 }
 
+/* Estilos para o header */
 .container_header {
     display: flex;
-    display: flex;
-    margin: 3rem 5rem;
-    padding: 1rem;
+    justify-content: flex-start; /* Alinha a logo à esquerda */
+    align-items: flex-start; /* Alinha no topo */
+    width: 100%;
+    height: auto;
+    padding-top: 2.5rem; /* Padding equivalente a 40px no topo */
+    padding-left: 2.5rem; /* Padding equivalente a 40px à esquerda */
 }
 
-.img__logo {
-    width: 100%;
-    max-width: 2.8125rem; /* Equivalente a 45px */
+/* Estilos para a logo */
+.container_header img {  
+    height: 48px; /* Altura fixa */
+    width: auto; /* Largura ajustada automaticamente para manter a proporção */
+    max-width: 120px; /* Limite para a largura */
 }
 
 /* Container principal com grid layout para alinhar as seções */
@@ -24,21 +30,13 @@ body {
     width: calc(100% - 15rem); /* Garante que o layout ocupe todo o espaço disponível */
 }
 
-/* Container da área de texto */
-.container_text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-}
-
 /* Input de texto */
 .container__text__input {
     width: 100%;
     max-width: 42.5rem; /* Equivalente a 680px */
     height: 3rem; /* Equivalente a 48px */
-    padding: 1.5rem;
-    border: none;
+    margin-top: 8.5rem; /* 168px / 16px = 10.5rem para o topo */
+    border: 0;
     background: transparent;
 }
 
@@ -52,39 +50,53 @@ body {
     border: 0.3px solid;
 }
 
-/* Informações sobre o tipo de texto */
+/* Estilo para o container principal */
+.container__info__type__text {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: flex-start;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    margin-top: 40rem; /* Espaçamento de 635px em rem entre o input e esta div */
+}
+
+/* Estilo para o conteúdo de aviso */
 .content__info__type__text {
-    margin-top: 3rem;
     display: flex;
-    align-items: center;
+    align-items: center; /* Centraliza verticalmente a imagem e o parágrafo */
+    gap: 0.1rem; /* Espaço entre a imagem e o texto */
 }
 
-.content__info__type__text img {
-    height: 1rem;
-    margin-right: 0.5rem;
+/* Estilo para a imagem de aviso */
+.container__info__type__text img{
+    width: auto;
+    height: 1.5rem; /* Define um tamanho para a imagem */
 }
 
+/* Estilo para o parágrafo */
 .paragraph__info__type__text {
-    font-size: 0.75rem;
-    color: var(--gray-400);
-}
-
-/* Botões */
-.btn {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem; /* Espaçamento entre os botões */
-}
-
-/* Estilos dos botões de criptografar e descriptografar */
-.encrypt__button, .decrypt__button {
-    width: 100%;
-    max-width: 20.5rem; /* Equivalente a 328px */
     font-size: 1rem;
-    padding: 1.5rem; /* Equivalente a 24px */
-    border-radius: 1.5rem; /* Equivalente a 24px */
-    border: 0.0625rem solid #0A3871; /* Equivalente a 1px */
-    cursor: pointer;
+    line-height: 1.5;
+    display: flex;
+    align-items: center; /* Garante que o texto também seja alinhado verticalmente */
+}
+
+/* Estilo para o container dos botões */
+.btn {
+    display: flex;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+    gap: 0.5rem; /* Espaçamento de 71px arredondado para 4.4rem */
+    margin-top: 0.5rem; /* Espaçamento de 18px arredondado para 1.1rem */
+}
+
+/* Estilo para os botões */
+.encrypt__button, 
+.decrypt__button {
+    width: 20.8rem; /* 333px arredondado para 20.8rem */
+    padding: 1rem;
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Estilo do cursor ao passar sobre os botões */
+    border: none; /* Remove a borda padrão */
+    border-radius: 24rem; /* Bordas arredondadas */
 }
 
 .encrypt__button {
@@ -107,69 +119,116 @@ body {
     color: var(--background-color-main);
 }
 
-/* Container do decodificador de texto, agora alinhado à direita */
+/* Estilo para o container principal */
 .container__decoder {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    width: 100%;
-    max-width: 25rem; /* Equivalente a 400px */
-    border-radius: 0.625rem; /* Equivalente a 10px */
-    background-color: var(--background-color-text-decoder);
-    border: 0.0625rem solid #A18E8E; /* Equivalente a 1px */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha ao topo */
+    width: 25rem; /* 400px arredondado para 25rem */
+    height: 59rem; /* 944px arredondado para 59rem */
+    margin-top: 2.5rem; /* Espaçamento de 40px do topo */
+    border-radius: 2rem; /* Border-radius de 32px arredondado para 2rem */
+    background-color: #f1f1f1; /* Cor de fundo de exemplo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+    padding: 1rem; /* Espaçamento interno */
 }
 
-/* Conteúdo do decodificador */
+/* Estilo para o conteúdo do texto decodificador */
 .content__text__decoder {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 25rem; /* Equivalente a 400px */
-    text-align: center;
-    padding: 1.25rem; /* Equivalente a 20px */
+    flex-direction: column; /* Alinha elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 1rem; /* Espaçamento entre os elementos (16px arredondado para 1rem) */
+    width: 100%; /* Ocupa toda a largura do container */
+    padding-top: 15rem; /* Espaçamento de 238px arredondado para 15rem */
 }
 
-/* Imagem no decodificador */
-.img__decoder {
-    width: 100%;
-    height: auto;
-    padding-top: 5rem;
-    padding-bottom: 1rem;
+/* Estilo para a imagem */
+.container__decoder img {
+    width: 21rem; /* 338px arredondado para 21rem */
+    height: 19rem; /* 304px arredondado para 19rem */
 }
 
+/* Estilo para o título */
 .title__text_decoder {
-    font-size: 1.5rem;
+    width: 21rem; /* 335px arredondado para 21rem */
     text-align: center;
+    font-size: 1.25rem; /* Tamanho da fonte */
     font-weight: bold;
-    color: var(--gray-500);
+    margin: 0;
 }
 
+/* Estilo para o input */
 .input__text__decoder {
-    width: 100%;
-    max-width: 21rem; /* Equivalente a 336px */
-    height: 4.5rem; /* Equivalente a 72px */
-    padding: 1.25rem; /* Equivalente a 20px */
-    border: none;
-    background-color: var(--background-color-text-decoder);
-}
-
-.input__text__decoder::placeholder {
+    width: 21rem; /* 335px arredondado para 21rem */
+    padding: 0.75rem 1rem; /* Padding interno */
     font-size: 1rem;
-    text-align: center;
-    color: var(--gray-500);
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-/* Botão de copiar texto */
+/* Estilo para o botão de copiar */
 .copy__button {
-    width: 100%;
-    max-width: 21rem; /* Equivalente a 336px */
-    padding: 1.5rem; /* Equivalente a 24px */
-    margin-top: 2rem; /* Mantém espaçamento acima */
-    margin-bottom: 0.5rem; /* Equivalente a 8px */
-    border-radius: 1.5rem; /* Equivalente a 24px */
-    border: 0.0625rem solid #0A3871; /* Equivalente a 1px */
-    background-color: var(--background-color-text-decoder);
+    width: 21rem; /* 335px arredondado para 21rem */
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
     cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #007bff; /* Cor de exemplo */
+    color: white;
+    border: none;
+}
+
+/* Media query para telas com largura menor ou igual a 783px */
+@media (max-width: 783px) {
+    .container_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Estilo para reorganizar a estrutura verticalmente */
+    .container_header,
+    .container_text,
+    .container__info__type__text,
+    .btn,
+    .container__decoder {
+        width: 100%; /* Largura total da tela */
+        height: auto;
+        margin: 1rem 0; /* Margem para espaçamento entre os elementos */
+    }
+
+    /* Garantir que os botões também fiquem verticalmente */
+    .btn {
+        align-items: center; /* Centraliza os botões */
+    }
+
+    /* Força o container decoder a ficar abaixo dos botões */
+    .container__decoder {
+        width: 100%; /* Largura completa */
+        margin-top: 1rem; /* Espaço extra entre os botões e o decoder */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo dentro do container */
+    }
+
+    /* Esconde a imagem dentro do container decoder */
+    .container__decoder img {
+        display: none;
+    }
+
+    .input__text__decoder {
+        width: 17rem;
+    }
+
+    /* Esconde o botão de copiar inicialmente */
+    .copy__button {
+        display: none; /* Botão de copiar escondido inicialmente */
+    }
+}
+
+/* Exibir o botão "Copiar" quando houver texto no input */
+.input__text__decoder:not(:placeholder-shown) + .copy__button {
+    display: block; /* Exibe o botão "Copiar" apenas quando houver texto */
 }
