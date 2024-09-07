@@ -6,3 +6,9 @@
     --dark-blue-300: #0A3871;
     --decrypt-button: #D8DFE8;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
