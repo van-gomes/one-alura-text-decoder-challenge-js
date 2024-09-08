@@ -6,16 +6,14 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
-    height: auto;
-    padding-top: 2.5rem;
-    padding-left: 2.5rem;
+    margin-top: 2rem;
 }
 
 .container_header img {  
-    height: 48px;
-    width: auto;
-    max-width: 120px;
+    height: 3rem;
+    max-width: 25rem;
+    margin-left: 3rem;
+    padding: 0.3rem 2.3rem;
 }
 
 .container_main {
@@ -45,30 +43,23 @@ body {
     border: 0.3px solid;
 }
 
-.container__info__type__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 40rem;
-}
-
 .content__info__type__text {
     display: flex;
     align-items: center;
     gap: 0.1rem;
+    margin-top: 30rem;
 }
 
-.container__info__type__text img{
-    width: auto;
-    height: 1.5rem;
+.content__info__type__text img {
+    width: 1.5rem;
+    height: auto;
+    text-align: center;
+    margin-top: 0.4rem;
 }
 
 .paragraph__info__type__text {
     font-size: 1rem;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
 }
 
 .btn {
@@ -95,7 +86,7 @@ body {
 
 .decrypt__button {
     color: var(--dark-blue-300);
-    background-color: var(--decrypt-button);
+    background-color: yellow;
 }
 
 .encrypt__button:hover {
@@ -113,8 +104,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     width: 25rem;
-    height: 59rem;
-    margin-top: 2.5rem;
     border-radius: 2rem;
     background-color: #f1f1f1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -127,12 +116,13 @@ body {
     align-items: center;
     gap: 1rem;
     width: 100%;
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 .container__decoder img {
     width: 21rem;
     height: 19rem;
+    margin-top: 0.5rem;
 }
 
 .title__text_decoder {
@@ -155,6 +145,7 @@ body {
 .copy__button {
     width: 21rem;
     padding: 0.75rem 1rem;
+    margin-bottom: 8rem;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 0.5rem;
